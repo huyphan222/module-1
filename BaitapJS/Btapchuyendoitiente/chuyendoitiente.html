@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        td{
+            padding: 12px;
+        }
+    </style>
+    <form action="" >
+        <table>
+            <tr >
+                <td><strong>Amount</strong></td>
+                <td><strong>FromCurrency</strong></td>
+                <td><strong>ToCurrency</strong></td>
+            </tr>
+            <tr>
+                <td><input type="number" name="amount" id="amount"></td>
+                <td><select name="From" id="From">           
+                <option value="USD">USD</option>
+                <option value="VND">VND</option>
+                </select>
+                </td>
+                <td><select name="To" id="To">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>              
+                    </select>
+                </td>
+                <td>
+                <button type="button" style="background-color: blue; color: white;"   onclick="convert()">Convert</button>
+                </td>
+            </tr>
+            <tr>
+            <td id="result">=</td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        var vnd = 23000;
+        var amount = document.getElementById("amount");
+        var From = document.getElementById("From");
+        var To = document.getElementById("To");
+        var result = document.getElementById("result");
+
+        function convert(){
+            if (From.value == To.value){
+                if (From.value == "VND"){
+                    result.innerHTML = amount.value + "VND";
+                }
+                else
+                {
+                    result.innerHTML = amount.value + "usd";
+                }
+            }
+            else if(From.value != To.value){
+                if(From.value == "USD"){
+                    result.innerHTML = amount.value * vnd + "VND";
+                }
+                else{
+                    result.innerHTML = amount.value / vnd + "USD";
+                }
+            }
+              
+            }
+
+    </script>
+
+</body>
+</html>

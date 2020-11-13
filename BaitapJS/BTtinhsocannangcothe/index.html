@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh so do co the</title>
+</head>
+<body>
+    <script>
+        let weight = Number(prompt("nhap can nang"));
+        let height = Number(prompt("nhap chieu cao"));
+         
+        let bmi = weight / (height^2);
+        
+        if (bmi >= 30){
+            alert("map");
+        }
+        else if (bmi >=25.5){
+            alert("hoi map");
+        }
+        else if (bmi >=18.5){
+            alert("binh thuong");
+        }
+        else
+        {
+            alert("gay");
+        }
+        
+
+    </script>
+</body>
+</html>

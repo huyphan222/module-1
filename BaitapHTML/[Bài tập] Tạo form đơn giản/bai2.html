@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>đăng kí học viên</title>
+    <link rel="stylesheet" href="bai22.css">
+
+</head>
+<body>
+    <h2>Đăng kí học viên</h2>
+    <form method="GET" action="" id="form">
+        <div>
+            <label for="name">Họ tên:</label>
+            <input type="text" name="name" id="name"/><br>
+        </div>
+        <div>
+            <label for="date">ngày sinh:</label>
+            <input type="text" name="ngaysinh" id="date"/><br>
+        </div>
+        <div>
+            <label for="sex">Giới tính:</label>
+            <input type="radio" name="sex" id="sex"/> Nam
+            <input type="radio" name="sex"/> Nữ<br>
+        </div>
+        <div>
+        <label for="address">Địa chỉ:</label><br>
+        <textarea cols="50" rows="4" ></textarea><br>
+        </div>
+        <div>
+            <label for="class">Lớp:</label>
+            <select name="class">
+                <option value="choose">-chọn lớp-</option>
+                <option value="1">Lớp 1</option>
+                <option value="2">Lớp 2</option>
+                <option value="3">Lớp 3</option>           
+            </select><br>
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input type="text" name="email" id="email"/><br>
+        </div>
+        <div>
+            <label for="phone">số điện thoại:</label>
+            <input type="number" name="phone" id="phone"/><br>
+        </div>
+        <div>
+            <input type="submit" value="đắng ký">
+            <input type="reset" value="nhập lại">
+        </div>
+
+        
+    </form>
+</body>
+</html>

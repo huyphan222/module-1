@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let vatly = parseFloat(prompt("nhap diem vat ly"));
+        let hoahoc = parseFloat(prompt("nhap diem hoa hoc"));
+        let sinhhoc = parseFloat(prompt("nhap diem sinh hoc"));
+
+        let diemtb = (vatly+hoahoc+sinhhoc)/3;
+        let n = diemtb.toFixed(1);
+
+        document.write("diem vat ly");
+        document.write("<br/>");
+        document.write(vatly);
+        document.write("<br/>");
+        document.write("diem hoa hoc");
+        document.write("<br/>");
+        document.write(hoahoc);
+        document.write("<br/>");
+        document.write("diem sinh hoc");
+        document.write("<br/>");
+        document.write(sinhhoc);
+        document.write("<br/>");
+        document.write("Diem trung binh");
+        document.write("<br/>");
+        document.write(n);
+
+    </script>
+</body>
+</html>

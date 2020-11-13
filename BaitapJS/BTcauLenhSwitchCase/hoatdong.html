@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <td> <input type="number" id="number" min="1" max="12"></td>
+        <td> <input type="button" onclick="tinh()" value="tinh so ngay"></td>
+    </tr>
+        <tr>
+            <td id="result"></td>
+        </tr>
+    </table>
+
+    <script>
+       var number = document.getElementById("number")
+       var result = document.getElementById("result")
+       
+       
+        function tinh(){
+        var thang = parseInt(number.value)
+       switch (thang){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                result.innerHTML = "thang" + thang + " co 31 ngay";
+                break;
+                case 2:
+                result.innerHTML = "thang " + thang + " co 28 or 29 ngay"
+                break;
+                case 4:   
+                case 6:
+                case 9:
+                case 11:
+                result.innerHTML = ('thang' + thang +' co 30 ngay');  
+                break;
+                default: 
+                result.innerHTML = ("xin loi khong co thang  "+ thang );
+
+
+       }
+    }
+
+
+    </script>
+</body>
+</html>
