@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><h2>Temperature Converter</h2></td>
+        </tr>
+        <tr>
+            <td><p>Type a value in the Fahrenheit field to convert the value to Celcius:</p></td>
+        </tr>
+        <tr>
+            <td><label for="Fahrenheit">Fahrenheit:</label>
+                <input type="number" id="doF" 
+                oninput="temperatureConverter(this.value)"
+                onchange="temperatureConverter(this.value)">
+            </td>          
+        </tr>
+        <td>
+            <p>Celsius: <span id="outputCelsius"></span></p>
+        </td>
+    </table>
+
+    <script>
+        let number = document.getElementById("doF");
+        let result = document.getElementById("result");
+
+        function temperatureConverter(f){
+            f = parseFloat(f);
+            document.getElementById("outputCelsius").innerHTML = (f -32 ) / 1.8;
+            
+        }
+        
+      
+       
+   
+    </script>
+</body>
+</html>

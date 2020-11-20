@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>    
+        // function randomArray() {
+        //     let arr = [];
+        //     for (let i = 0; i < 10; i++) {
+        //         arr[i] = Math.floor(Math.random() * 81 + 10)
+        //     }
+        //     return arr;
+        // }
+        //     let arr1 = randomArray();
+        //     let arr2 = randomArray();
+
+
+        // function findMinValueOfArray(arr) {
+
+        //     return Math.min.apply(null, arr);
+
+        // }   
+
+        //     let min = findMinValueOfArray(arr1);
+        //     document.write(min);
+
+        //     let min2 = findMinValueOfArray(arr2);
+        //     document.write(min2);
+
+
+
+
+
+
+
+
+        //  function randomNumberAraay(){
+        //      let n = +prompt("nhap do dai cua mang");
+        //       let arr = [];
+        //       for (let i = 0; i < n; i++){
+        //           arr[i] = Math.floor(Math.random()*81 + 10)
+        //       }
+        //       return arr;
+        //  }
+         
+        //  let arr1 = randomNumberAraay();
+
+        //  function minValueOfArray(arr){
+        //     return Math.min.apply(null, arr);
+        //  }
+
+        //  let min = minValueOfArray(arr1);
+        //  document.write(min);
+
+
+
+
+        function randomNumberinArray(){
+            let arr = [];
+            let n = +prompt("nhập vào độ dài của mảng");
+            for (let i = 0; i < n; i++)
+            {
+                arr[i] = Math.floor(Math.random()*81 + 10)
+            }
+            return arr;
+        }
+
+        function findMinvalueOfArray(arr){
+            return Math.min.apply(null, arr);
+        }
+
+        let arr1 = randomNumberinArray();
+        let min = findMinvalueOfArray(arr1);
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
