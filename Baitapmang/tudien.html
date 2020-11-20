@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td> <input type="text" id="text"> </td>
+                <td>   <input type="button" value="search" onclick="search()"> </td>
+            </tr>         
+           <td id="result"></td>           
+        </table>
+    </form>
+</body>
+</html>
+<script>
+    let english = ["one","two","three","four","five"];
+    let vietnamese = ["mot","hai","ba","bon","nam"];
+    // let text = document.getElementById("text").value;
+    // let result = document.getElementById("result");
+    
+    function search()
+    {
+        
+        let text = document.getElementById("text");
+        let result = document.getElementById("result");
+        for (let i = 0;i < english.length; i++)
+        {
+            if (text.value == english[i])
+            {
+                result.innerHTML = vietnamese[i];
+                break;
+            }
+            else
+            {
+                result.innerHTML = " tu ban vua tim kiem khong co trong tu dien";
+            }
+        }
+    }
+
+
+
+</script>
