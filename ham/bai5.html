@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="hienthi">=</p>
+
+    <script>
+
+        function FindNamestar() {
+
+            let stars = ["Polaris", " Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+            let stars2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+            let n = prompt("input name of star");
+
+
+
+            for (let i = 0; i < stars.length; i++) {
+                if (n == stars[i]) {
+                    document.getElementById("hienthi").innerHTML = `ngoi sao ${stars[i]} thuoc chom sao ${stars2[i]}`
+                    break;
+
+                }
+                else {
+                    document.getElementById("hienthi").innerHTML = "khong co ngoi sao nay"
+                }
+            }
+        }
+
+        FindNamestar();
+
+
+    </script>
+</body>
+
+</html>
